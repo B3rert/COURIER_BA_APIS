@@ -13,7 +13,7 @@ namespace CourierBA_dsAPIS.Controllers
     public class PA_tbl_UserController : ApiController
     {
         [HttpGet]
-        public DataSet getPA_tbl_User(string userName)
+        public DataSet getPA_tbl_User(int accion, string userName)
         {
 
             DataSet dataSet = null;
@@ -23,7 +23,7 @@ namespace CourierBA_dsAPIS.Controllers
                 var connection = ConnectionSql.getConnection();
                 connection.Open();
 
-                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter($"EXECUTE [PA_tbl_User]  4,0,{userName}", connection);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter($"EXECUTE [PA_tbl_User]  {accion},0,{userName}", connection);
 
                 dataSet = new DataSet();
                 sqlDataAdapter.Fill(dataSet);
