@@ -167,7 +167,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Messege.cs" />
-    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Models\PA_tbl_UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

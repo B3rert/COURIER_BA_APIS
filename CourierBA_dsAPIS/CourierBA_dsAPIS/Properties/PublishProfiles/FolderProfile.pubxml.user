@@ -77,10 +77,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/CourierBA_dsAPIS.dll">
-      <publishTime>01/04/2021 12:17:26</publishTime>
+      <publishTime>01/05/2021 16:26:32</publishTime>
     </File>
     <File Include="bin/CourierBA_dsAPIS.pdb">
-      <publishTime>01/04/2021 12:17:26</publishTime>
+      <publishTime>01/05/2021 16:26:32</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>09/05/2018 16:10:50</publishTime>
@@ -318,6 +318,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Global.asax">
       <publishTime>12/16/2020 07:52:40</publishTime>
+    </File>
+    <File Include="Models/Messege.cs">
+      <publishTime>12/16/2020 10:30:15</publishTime>
+    </File>
+    <File Include="Models/UserModel.cs">
+      <publishTime>12/17/2020 12:29:01</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>12/16/2020 07:52:46</publishTime>
