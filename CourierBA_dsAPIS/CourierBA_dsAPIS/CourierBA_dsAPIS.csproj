@@ -159,9 +159,13 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PA_bsc_Empresa_1Controller.cs" />
     <Compile Include="Controllers\PA_bsc_Estacion_Trabajo_2Controller.cs" />
+    <Compile Include="Controllers\PA_bsc_Moneda_2Controller.cs" />
+    <Compile Include="Controllers\PA_bsc_Producto_Uso_2Controller.cs" />
     <Compile Include="Controllers\PA_bsc_User_2Controller.cs" />
     <Compile Include="Controllers\PA_bsc_User_AplicationController.cs" />
     <Compile Include="Controllers\PA_bsc_User_Display_2Controller.cs" />
+    <Compile Include="Controllers\PA_tbl_Referencia2Controller.cs" />
+    <Compile Include="Controllers\PA_tbl_ReferenciaController.cs" />
     <Compile Include="Controllers\PA_tbl_UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
