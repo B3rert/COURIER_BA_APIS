@@ -83,3 +83,7 @@ C:\Users\DESARROLLO-TECPAN\Documents\DEMOSOFT\Proyectos\CourrierBA\CourierBA_Api
 C:\Users\DESARROLLO-TECPAN\Documents\DEMOSOFT\Proyectos\CourrierBA\CourierBA_Apis\CourierBA_dsAPIS\CourierBA_dsAPIS\obj\Release\CourierBA_dsAPIS.csproj.CopyComplete
 C:\Users\DESARROLLO-TECPAN\Documents\DEMOSOFT\Proyectos\CourrierBA\CourierBA_Apis\CourierBA_dsAPIS\CourierBA_dsAPIS\obj\Release\CourierBA_dsAPIS.dll
 C:\Users\DESARROLLO-TECPAN\Documents\DEMOSOFT\Proyectos\CourrierBA\CourierBA_Apis\CourierBA_dsAPIS\CourierBA_dsAPIS\obj\Release\CourierBA_dsAPIS.pdb
+C:\Users\DESARROLLO-TECPAN\Documents\DEMOSOFT\Proyectos\CourrierBA\CourierBA_Apis\CourierBA_dsAPIS\CourierBA_dsAPIS\bin\Intercom.dll
+C:\Users\DESARROLLO-TECPAN\Documents\DEMOSOFT\Proyectos\CourrierBA\CourierBA_Apis\CourierBA_dsAPIS\CourierBA_dsAPIS\bin\RestSharp.dll
+C:\Users\DESARROLLO-TECPAN\Documents\DEMOSOFT\Proyectos\CourrierBA\CourierBA_Apis\CourierBA_dsAPIS\CourierBA_dsAPIS\bin\Intercom.pdb
+C:\Users\DESARROLLO-TECPAN\Documents\DEMOSOFT\Proyectos\CourrierBA\CourierBA_Apis\CourierBA_dsAPIS\CourierBA_dsAPIS\bin\RestSharp.xml

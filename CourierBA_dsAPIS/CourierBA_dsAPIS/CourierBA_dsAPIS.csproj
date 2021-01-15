@@ -45,10 +45,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Intercom, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intercom.Dotnet.Client.2.1.1\lib\net452\Intercom.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RestSharp, Version=106.5.4.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.5.4\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -166,12 +174,17 @@
     <Compile Include="Controllers\PA_bsc_User_Display_2Controller.cs" />
     <Compile Include="Controllers\PA_tbl_Referencia2Controller.cs" />
     <Compile Include="Controllers\PA_tbl_ReferenciaController.cs" />
+    <Compile Include="Controllers\PA_tbl_Referencia_ObjetoController.cs" />
     <Compile Include="Controllers\PA_tbl_UserController.cs" />
+    <Compile Include="Controllers\UploadFileController.cs" />
+    <Compile Include="Controllers\UploadImageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Messege.cs" />
     <Compile Include="Models\PA_tbl_UserModel.cs" />
+    <Compile Include="Models\UploadByteModel.cs" />
+    <Compile Include="Models\UpoloadFileModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -229,6 +242,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Upload\" />
     <Folder Include="Views\Modulos\" />
   </ItemGroup>
   <ItemGroup>
