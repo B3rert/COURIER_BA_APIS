@@ -10,25 +10,17 @@ using System.Web.Http;
 
 namespace CourierBA_dsAPIS.Controllers
 {
-    public class PA_tbl_Referencia2Controller : ApiController
+    public class FromBodyPa_Tbl_refrencia2Controller : ApiController
     {
-        [HttpGet]
-        public DataSet getPA_tbl_Referencia2(int empresa,
-            string descripcion,
-            int referenciPadre,
-            string observacion,
-            string userName,
-            float monto,
-            int peso,
-            int pieza,
-            int producto,
-            int moneda)
+        [HttpPost]
+        public DataSet postPa_tbl_referencia2([FromBody] PA_tblReferencia2Model model)
         {
             DataSet dataSet = null;
 
             using (var connection = Connection.ConnectionSql.getConnection())
             {
                 connection.Open();
+                string testEsp = "prueba con espacios";
 
                 try
                 {
@@ -37,16 +29,16 @@ namespace CourierBA_dsAPIS.Controllers
                         $"  1" +
                         $", 5" +
                         $", 0" +
-                        $", {empresa}" +
-                        $", '{descripcion}'" +
+                        $", {model.Empresa}" +
+                        $", {model.Descripcion}" +
                         $", ''" +
                         $", 0" +
                         $", 0" +
-                        $", {referenciPadre}" +
-                        $", '{observacion}'" +
+                        $", {model.ReferenciaPadre}" +
+                        $", '{testEsp}'" +
                         $", 69" +
                         $", null" +
-                        $", {userName}" +
+                        $", {model.UserName}" +
                         $", null" +
                         $", null" +
                         $", 2" +
@@ -56,7 +48,7 @@ namespace CourierBA_dsAPIS.Controllers
                         $", NULL" +
                         $", 0" +
                         $", NULL" +
-                        $", {monto}" +
+                        $", {model.Monto}" +
                         $", NULL" +
                         $", 0" +
                         $", NULL" +
@@ -64,20 +56,20 @@ namespace CourierBA_dsAPIS.Controllers
                         $", NULL" +
                         $", NULL" +
                         $", NULL" +
-                        $", {peso}" +
+                        $", {model.Peso}" +
                         $", NULL" +
                         $", NULL" +
-                        $", {pieza}" +
-                        $", NULL" +
-                        $", NULL" +
-                        $", NULL" +
+                        $", {model.Pieza}" +
                         $", NULL" +
                         $", NULL" +
                         $", NULL" +
                         $", NULL" +
                         $", NULL" +
                         $", NULL" +
-                        $", {producto}" +
+                        $", NULL" +
+                        $", NULL" +
+                        $", NULL" +
+                        $", {model.Producto}" +
                         $", 1" +
                         $", NULL" +
                         $", NULL" +
@@ -95,20 +87,19 @@ namespace CourierBA_dsAPIS.Controllers
                         $", NULL" +
                         $", NULL" +
                         $", NULL" +
-                        $", {moneda}", connection);
+                        $", {model.Moneda}", connection);
 
                     dataSet = new DataSet();
                     sqlDataAdapter.Fill(dataSet);
 
                     return dataSet;
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     var test = ex.Message;
                     return dataSet;
                 }
             }
         }
-
     }
 }

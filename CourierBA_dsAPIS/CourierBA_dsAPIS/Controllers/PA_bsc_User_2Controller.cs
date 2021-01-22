@@ -14,7 +14,7 @@ namespace CourierBA_dsAPIS.Controllers
     public class PA_bsc_User_2Controller : ApiController
     {
         [HttpGet]
-        public int getUser(string user, string pass)
+        public DataSet getUser(string user, string pass)
         {
 
             DataSet dataSet = null;
@@ -24,7 +24,9 @@ namespace CourierBA_dsAPIS.Controllers
                 var connection = ConnectionSql.getConnection();
                 connection.Open();
 
-                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter($"EXEC [PA_bsc_User_2] 1,{user},{pass}", connection);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter($"EXEC [PA_bsc_User_2] 1," +
+                    $"'{user}'," +
+                    $"'{pass}'", connection);
 
                 dataSet = new DataSet();
                 sqlDataAdapter.Fill(dataSet);
@@ -34,12 +36,12 @@ namespace CourierBA_dsAPIS.Controllers
                 DataTable table = new DataTable();
                 sqlDataAdapter.Fill(table);
 
-                return table.Rows.Count;
+                return dataSet;
 
             }
             catch
             {
-                return 0;
+                return dataSet;
             }
 
         }

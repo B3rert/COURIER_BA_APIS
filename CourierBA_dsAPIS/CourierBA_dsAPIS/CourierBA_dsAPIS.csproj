@@ -164,6 +164,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Connection\ConnectionSql.cs" />
+    <Compile Include="Controllers\FromBodyPa_Tbl_refrencia2Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PA_bsc_Empresa_1Controller.cs" />
     <Compile Include="Controllers\PA_bsc_Estacion_Trabajo_2Controller.cs" />
@@ -172,16 +173,19 @@
     <Compile Include="Controllers\PA_bsc_User_2Controller.cs" />
     <Compile Include="Controllers\PA_bsc_User_AplicationController.cs" />
     <Compile Include="Controllers\PA_bsc_User_Display_2Controller.cs" />
+    <Compile Include="Controllers\PA_Registro_UserController.cs" />
     <Compile Include="Controllers\PA_tbl_Referencia2Controller.cs" />
     <Compile Include="Controllers\PA_tbl_ReferenciaController.cs" />
     <Compile Include="Controllers\PA_tbl_Referencia_ObjetoController.cs" />
     <Compile Include="Controllers\PA_tbl_UserController.cs" />
+    <Compile Include="Controllers\PA_Validar_ReferenciaController.cs" />
     <Compile Include="Controllers\UploadFileController.cs" />
     <Compile Include="Controllers\UploadImageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Messege.cs" />
+    <Compile Include="Models\PA_tblReferencia2Model.cs" />
     <Compile Include="Models\PA_tbl_UserModel.cs" />
     <Compile Include="Models\UploadByteModel.cs" />
     <Compile Include="Models\UpoloadFileModel.cs" />
