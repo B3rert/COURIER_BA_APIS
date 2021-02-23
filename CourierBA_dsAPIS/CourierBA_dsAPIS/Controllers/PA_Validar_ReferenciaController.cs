@@ -12,7 +12,6 @@ namespace CourierBA_dsAPIS.Controllers
 {
     public class PA_Validar_ReferenciaController : ApiController
     {
-        //Empresa
         [HttpGet]
         public int getValidarReferencia(string user, string descripcion, int referencia)
         {

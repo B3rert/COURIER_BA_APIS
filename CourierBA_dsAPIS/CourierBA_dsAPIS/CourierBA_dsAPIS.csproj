@@ -164,6 +164,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Connection\ConnectionSql.cs" />
+    <Compile Include="Controllers\AnularReferenciaController.cs" />
     <Compile Include="Controllers\FromBodyPa_Tbl_refrencia2Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PA_bsc_Empresa_1Controller.cs" />
@@ -173,10 +174,13 @@
     <Compile Include="Controllers\PA_bsc_User_2Controller.cs" />
     <Compile Include="Controllers\PA_bsc_User_AplicationController.cs" />
     <Compile Include="Controllers\PA_bsc_User_Display_2Controller.cs" />
+    <Compile Include="Controllers\PA_Recuperar_UserController.cs" />
     <Compile Include="Controllers\PA_Registro_UserController.cs" />
+    <Compile Include="Controllers\PA_tbl_Documento_Aut_dsController.cs" />
     <Compile Include="Controllers\PA_tbl_Referencia2Controller.cs" />
     <Compile Include="Controllers\PA_tbl_ReferenciaController.cs" />
     <Compile Include="Controllers\PA_tbl_Referencia_ObjetoController.cs" />
+    <Compile Include="Controllers\PA_tbl_Transaccion_Aut_dsController.cs" />
     <Compile Include="Controllers\PA_tbl_UserController.cs" />
     <Compile Include="Controllers\PA_Validar_ReferenciaController.cs" />
     <Compile Include="Controllers\UploadFileController.cs" />
